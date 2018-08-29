@@ -198,9 +198,7 @@ input[type='text'],
 input[type='url'],
 textarea,
 select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 0.1rem solid #d1d1d1;
   border-radius: .4rem;
@@ -407,6 +405,11 @@ input[type='radio'] {
   max-width: 90%;
 }
 
+.row .column-none {
+  flex-basis: 0;
+  padding: 0;
+}
+
 .row .column .column-top {
   align-self: flex-start;
 }
@@ -416,8 +419,7 @@ input[type='radio'] {
 }
 
 .row .column .column-center {
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 @media (min-width: 40rem) {
@@ -590,5 +592,3 @@ img {
 .float-right {
   float: right;
 }
-
-/*# sourceMappingURL=milligram.css.map */
